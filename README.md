@@ -1,6 +1,6 @@
 # CareDesk
 
-A synthetic clinic workspace built with React, Vite, TypeScript, Node.js and Firebase. Designed as a small, reviewable full-stack portfolio project: patient records, encounter notes, clinician-reviewed AI drafts, access control and audit trails.
+A synthetic clinic workspace built with React, Vite, TypeScript, Node.js and Firebase. Designed with patient records, encounter notes, clinician-reviewed AI drafts, access control and audit trails.
 
 **Portfolio software. Synthetic data only. Not for clinical use. No claim of HIPAA compliance.**
 
