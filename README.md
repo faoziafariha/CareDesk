@@ -8,6 +8,10 @@ The repository combines a **ready-to-run browser demo** with a **separate Fireba
 
 > **Synthetic data only. Not for clinical use.** The public demo uses browser storage and simulated roles. It does not send real prescriptions, text messages, emails, or calendar invitations. No HIPAA compliance claim is made.
 
+### Demo
+
+url - https://care-desk-theta.vercel.app/
+
 [Quick start](#quick-start) · [Pages and features](#pages-and-features) · [Architecture](#architecture) · [Run modes](#run-modes) · [Documentation](#documentation)
 
 ## What the project contains
