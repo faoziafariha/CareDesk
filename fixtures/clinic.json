@@ -1,0 +1,458 @@
+{
+  "patients": [
+    {
+      "id": "p-1001",
+      "name": "Alex Morgan",
+      "dob": "1992-04-18",
+      "phone": "202-555-0140",
+      "address": "14 Example Lane",
+      "createdAt": "2026-05-09T14:00:00Z",
+      "patientUid": "demo-patient"
+    },
+    {
+      "id": "p-1002",
+      "name": "Jamie Chen",
+      "dob": "1985-09-03",
+      "phone": "202-555-0141",
+      "address": "28 Sample Street",
+      "createdAt": "2026-04-28T14:00:00Z"
+    },
+    {
+      "id": "p-1003",
+      "name": "Sam Rivera",
+      "dob": "2000-12-11",
+      "phone": "202-555-0142",
+      "address": "7 Fiction Avenue",
+      "createdAt": "2026-04-17T14:00:00Z"
+    },
+    {
+      "id": "p-1004",
+      "name": "Taylor Brooks",
+      "dob": "1976-06-24",
+      "phone": "202-555-0143",
+      "address": "42 Demo Road",
+      "createdAt": "2026-04-06T14:00:00Z"
+    },
+    {
+      "id": "p-1005",
+      "name": "Jordan Patel",
+      "dob": "1968-02-09",
+      "phone": "202-555-0144",
+      "address": "116 Example Court",
+      "createdAt": "2026-03-26T14:00:00Z"
+    },
+    {
+      "id": "p-1006",
+      "name": "Casey Williams",
+      "dob": "1997-08-21",
+      "phone": "202-555-0145",
+      "address": "23 Sample Terrace",
+      "createdAt": "2026-03-15T14:00:00Z"
+    },
+    {
+      "id": "p-1007",
+      "name": "Riley Thompson",
+      "dob": "1981-11-06",
+      "phone": "202-555-0146",
+      "address": "65 Fiction Way",
+      "createdAt": "2026-03-04T14:00:00Z"
+    },
+    {
+      "id": "p-1008",
+      "name": "Avery Johnson",
+      "dob": "1959-03-15",
+      "phone": "202-555-0147",
+      "address": "9 Demo Crescent",
+      "createdAt": "2026-02-21T14:00:00Z"
+    },
+    {
+      "id": "p-1009",
+      "name": "Morgan Lee",
+      "dob": "1990-07-30",
+      "phone": "202-555-0148",
+      "address": "81 Example Drive",
+      "createdAt": "2026-02-10T14:00:00Z"
+    },
+    {
+      "id": "p-1010",
+      "name": "Cameron Davis",
+      "dob": "1973-01-12",
+      "phone": "202-555-0149",
+      "address": "32 Sample Place",
+      "createdAt": "2026-01-30T14:00:00Z"
+    },
+    {
+      "id": "p-1011",
+      "name": "Quinn Martinez",
+      "dob": "2003-05-27",
+      "phone": "202-555-0150",
+      "address": "18 Fiction Circle",
+      "createdAt": "2026-01-19T14:00:00Z"
+    },
+    {
+      "id": "p-1012",
+      "name": "Drew Wilson",
+      "dob": "1988-10-04",
+      "phone": "202-555-0151",
+      "address": "54 Demo Avenue",
+      "createdAt": "2026-01-08T14:00:00Z"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "e-1001",
+      "patientId": "p-1001",
+      "reason": "Annual wellness visit",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-05T14:00:00Z"
+    },
+    {
+      "id": "e-2010",
+      "patientId": "p-1006",
+      "reason": "Sleep concerns",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-05T09:00:00Z"
+    },
+    {
+      "id": "e-2020",
+      "patientId": "p-1011",
+      "reason": "Sports participation discussion",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-11-05T04:00:00Z"
+    },
+    {
+      "id": "e-2002",
+      "patientId": "p-1002",
+      "reason": "Blood pressure follow-up",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-11-04T13:00:00Z"
+    },
+    {
+      "id": "e-2012",
+      "patientId": "p-1007",
+      "reason": "Establish care",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-04T08:00:00Z"
+    },
+    {
+      "id": "e-2022",
+      "patientId": "p-1012",
+      "reason": "Medication list reconciliation",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-04T03:00:00Z"
+    },
+    {
+      "id": "e-2004",
+      "patientId": "p-1003",
+      "reason": "Seasonal allergy review",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-03T12:00:00Z"
+    },
+    {
+      "id": "e-2014",
+      "patientId": "p-1008",
+      "reason": "Preventive care review",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-11-03T07:00:00Z"
+    },
+    {
+      "id": "e-2006",
+      "patientId": "p-1004",
+      "reason": "Knee discomfort follow-up",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-02T11:00:00Z"
+    },
+    {
+      "id": "e-2016",
+      "patientId": "p-1009",
+      "reason": "Headache history review",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-02T06:00:00Z"
+    },
+    {
+      "id": "e-2008",
+      "patientId": "p-1005",
+      "reason": "Lab results discussion",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-11-01T10:00:00Z"
+    },
+    {
+      "id": "e-2018",
+      "patientId": "p-1010",
+      "reason": "Post-visit check-in",
+      "clinicianId": "demo-clinician",
+      "status": "open",
+      "createdAt": "2026-11-01T05:00:00Z"
+    },
+    {
+      "id": "e-2001",
+      "patientId": "p-1001",
+      "reason": "Establish care",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-10-01T13:40:00Z"
+    },
+    {
+      "id": "e-2003",
+      "patientId": "p-1002",
+      "reason": "Preventive care review",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-28T12:40:00Z"
+    },
+    {
+      "id": "e-2005",
+      "patientId": "p-1003",
+      "reason": "Headache history review",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-25T11:40:00Z"
+    },
+    {
+      "id": "e-2007",
+      "patientId": "p-1004",
+      "reason": "Post-visit check-in",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-22T10:40:00Z"
+    },
+    {
+      "id": "e-2009",
+      "patientId": "p-1005",
+      "reason": "Sports participation discussion",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-19T09:40:00Z"
+    },
+    {
+      "id": "e-2011",
+      "patientId": "p-1006",
+      "reason": "Medication list reconciliation",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-16T08:40:00Z"
+    },
+    {
+      "id": "e-2013",
+      "patientId": "p-1007",
+      "reason": "Annual wellness visit",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-13T07:40:00Z"
+    },
+    {
+      "id": "e-2015",
+      "patientId": "p-1008",
+      "reason": "Blood pressure follow-up",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-10T06:40:00Z"
+    },
+    {
+      "id": "e-2017",
+      "patientId": "p-1009",
+      "reason": "Seasonal allergy review",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-07T05:40:00Z"
+    },
+    {
+      "id": "e-2019",
+      "patientId": "p-1010",
+      "reason": "Knee discomfort follow-up",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-04T04:40:00Z"
+    },
+    {
+      "id": "e-2021",
+      "patientId": "p-1011",
+      "reason": "Lab results discussion",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-09-01T03:40:00Z"
+    },
+    {
+      "id": "e-2023",
+      "patientId": "p-1012",
+      "reason": "Sleep concerns",
+      "clinicianId": "demo-clinician",
+      "status": "signed",
+      "createdAt": "2026-08-29T02:40:00Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "n-2001",
+      "encounterId": "e-2001",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-10-01T13:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nNew to the clinic and would like to transfer prior records. No urgent concern reported.\n\nObjective\nBP 122/78 mmHg; pulse 74/min; temperature 36.5 C.\n\nAssessment\nEstablishing longitudinal care; historical diagnoses have not yet been verified.\n\nPlan\nRecord release process explained. Bring medication list and prior screening dates to follow-up."
+    },
+    {
+      "id": "n-2002",
+      "encounterId": "e-2002",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-04T13:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReturns with a home blood pressure log. No headache, chest discomfort, or dizziness reported.\n\nObjective\nBP 132/82 mmHg; pulse 76/min. Home log reviewed with patient.\n\nAssessment\nBlood pressure follow-up; clinician to reconcile home measurements with the longitudinal record.\n\nPlan\nContinue recording home measurements for review. Medication reconciliation documented separately; no change recorded in this example."
+    },
+    {
+      "id": "n-2003",
+      "encounterId": "e-2003",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-28T12:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReturns to review outstanding preventive care items. Reports feeling well today.\n\nObjective\nBP 126/80 mmHg; pulse 68/min. No acute distress documented.\n\nAssessment\nPreventive care review; external records remain incomplete.\n\nPlan\nScreening history reviewed with patient. Confirm prior reports before recording completion dates."
+    },
+    {
+      "id": "n-2004",
+      "encounterId": "e-2004",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-03T12:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports intermittent sneezing and watery eyes after outdoor activity. No breathing difficulty reported.\n\nObjective\nTemperature 36.6 C; pulse 70/min. No respiratory distress observed.\n\nAssessment\nSeasonal symptoms discussed; final assessment requires clinician review.\n\nPlan\nExposure history reviewed. Return precautions discussed and follow-up offered if symptoms persist."
+    },
+    {
+      "id": "n-2005",
+      "encounterId": "e-2005",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-25T11:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nDescribes intermittent headaches associated with extended screen time. No symptoms at the visit.\n\nObjective\nBP 116/74 mmHg; pulse 71/min. Detailed neurological examination not recorded in this fixture.\n\nAssessment\nRecurrent headache history; no definitive diagnosis made in the sample.\n\nPlan\nSymptom timeline reviewed. Clinician to complete examination and document individualized follow-up."
+    },
+    {
+      "id": "n-2006",
+      "encounterId": "e-2006",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-02T11:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nIntermittent right knee discomfort after longer walks. No recent fall or new swelling reported.\n\nObjective\nWalks independently. No visible swelling documented; detailed examination not recorded.\n\nAssessment\nActivity-associated knee discomfort; incomplete examination in this fictional record.\n\nPlan\nActivity and symptom diary discussed. Arrange reassessment if symptoms do not improve."
+    },
+    {
+      "id": "n-2007",
+      "encounterId": "e-2007",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-22T10:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports improvement since the previous visit and no new concerns.\n\nObjective\nTelephone encounter; no physical examination or measured vitals available.\n\nAssessment\nFollow-up discussion based on patient-reported symptoms.\n\nPlan\nQuestions answered. Patient advised to contact the clinic for reassessment if concerns return."
+    },
+    {
+      "id": "n-2008",
+      "encounterId": "e-2008",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-01T10:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nHere to review previously ordered screening results. No new symptoms reported.\n\nObjective\nPatient alert and comfortable. Actual laboratory values are not included in this fixture.\n\nAssessment\nResults review encounter; no diagnosis inferred from missing values.\n\nPlan\nClinician to verify the original report before finalizing interpretation. Questions and follow-up plan reviewed."
+    },
+    {
+      "id": "n-2009",
+      "encounterId": "e-2009",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-19T09:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nWould like to discuss returning to recreational activity after a sedentary period.\n\nObjective\nBP 114/72 mmHg; pulse 66/min. No clearance examination performed in this example.\n\nAssessment\nActivity counseling discussion; this note does not constitute sports clearance.\n\nPlan\nPrior history and goals reviewed. Schedule an appropriate examination before any required clearance."
+    },
+    {
+      "id": "n-2010",
+      "encounterId": "e-2010",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-05T09:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports variable sleep schedule during a recent change in work hours. No acute safety concern volunteered.\n\nObjective\nConversant and attentive. Vitals not recorded for this discussion visit.\n\nAssessment\nSleep concern with a recent schedule change; further history needed.\n\nPlan\nSleep routine and tracking discussed. Follow-up requested to review the sleep diary."
+    },
+    {
+      "id": "n-2011",
+      "encounterId": "e-2011",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-16T08:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nBrings a list of medicines from an outside practice. Requests help confirming the record.\n\nObjective\nMedication names and doses intentionally omitted from this synthetic example.\n\nAssessment\nMedication reconciliation remains pending verification against outside records.\n\nPlan\nOutside pharmacy/practice confirmation requested. No prescription or dose change recorded."
+    },
+    {
+      "id": "n-2012",
+      "encounterId": "e-2012",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-04T08:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nNew to the clinic and would like to transfer prior records. No urgent concern reported.\n\nObjective\nBP 122/78 mmHg; pulse 74/min; temperature 36.5 C.\n\nAssessment\nEstablishing longitudinal care; historical diagnoses have not yet been verified.\n\nPlan\nRecord release process explained. Bring medication list and prior screening dates to follow-up."
+    },
+    {
+      "id": "n-2013",
+      "encounterId": "e-2013",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-13T07:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nNo new concerns. Would like to review preventive care and sleep habits.\n\nObjective\nBP 118/76 mmHg; pulse 72/min; temperature 36.7 C. Comfortable and conversant.\n\nAssessment\nRoutine preventive visit; no acute concern documented.\n\nPlan\nPreventive checklist reviewed. Patient will bring prior vaccination records to the next visit."
+    },
+    {
+      "id": "n-2014",
+      "encounterId": "e-2014",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-03T07:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReturns to review outstanding preventive care items. Reports feeling well today.\n\nObjective\nBP 126/80 mmHg; pulse 68/min. No acute distress documented.\n\nAssessment\nPreventive care review; external records remain incomplete.\n\nPlan\nScreening history reviewed with patient. Confirm prior reports before recording completion dates."
+    },
+    {
+      "id": "n-2015",
+      "encounterId": "e-2015",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-10T06:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReturns with a home blood pressure log. No headache, chest discomfort, or dizziness reported.\n\nObjective\nBP 132/82 mmHg; pulse 76/min. Home log reviewed with patient.\n\nAssessment\nBlood pressure follow-up; clinician to reconcile home measurements with the longitudinal record.\n\nPlan\nContinue recording home measurements for review. Medication reconciliation documented separately; no change recorded in this example."
+    },
+    {
+      "id": "n-2016",
+      "encounterId": "e-2016",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-02T06:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nDescribes intermittent headaches associated with extended screen time. No symptoms at the visit.\n\nObjective\nBP 116/74 mmHg; pulse 71/min. Detailed neurological examination not recorded in this fixture.\n\nAssessment\nRecurrent headache history; no definitive diagnosis made in the sample.\n\nPlan\nSymptom timeline reviewed. Clinician to complete examination and document individualized follow-up."
+    },
+    {
+      "id": "n-2017",
+      "encounterId": "e-2017",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-07T05:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports intermittent sneezing and watery eyes after outdoor activity. No breathing difficulty reported.\n\nObjective\nTemperature 36.6 C; pulse 70/min. No respiratory distress observed.\n\nAssessment\nSeasonal symptoms discussed; final assessment requires clinician review.\n\nPlan\nExposure history reviewed. Return precautions discussed and follow-up offered if symptoms persist."
+    },
+    {
+      "id": "n-2018",
+      "encounterId": "e-2018",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-01T05:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports improvement since the previous visit and no new concerns.\n\nObjective\nTelephone encounter; no physical examination or measured vitals available.\n\nAssessment\nFollow-up discussion based on patient-reported symptoms.\n\nPlan\nQuestions answered. Patient advised to contact the clinic for reassessment if concerns return."
+    },
+    {
+      "id": "n-2019",
+      "encounterId": "e-2019",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-04T04:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nIntermittent right knee discomfort after longer walks. No recent fall or new swelling reported.\n\nObjective\nWalks independently. No visible swelling documented; detailed examination not recorded.\n\nAssessment\nActivity-associated knee discomfort; incomplete examination in this fictional record.\n\nPlan\nActivity and symptom diary discussed. Arrange reassessment if symptoms do not improve."
+    },
+    {
+      "id": "n-2020",
+      "encounterId": "e-2020",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-05T04:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nWould like to discuss returning to recreational activity after a sedentary period.\n\nObjective\nBP 114/72 mmHg; pulse 66/min. No clearance examination performed in this example.\n\nAssessment\nActivity counseling discussion; this note does not constitute sports clearance.\n\nPlan\nPrior history and goals reviewed. Schedule an appropriate examination before any required clearance."
+    },
+    {
+      "id": "n-2021",
+      "encounterId": "e-2021",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-09-01T03:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nHere to review previously ordered screening results. No new symptoms reported.\n\nObjective\nPatient alert and comfortable. Actual laboratory values are not included in this fixture.\n\nAssessment\nResults review encounter; no diagnosis inferred from missing values.\n\nPlan\nClinician to verify the original report before finalizing interpretation. Questions and follow-up plan reviewed."
+    },
+    {
+      "id": "n-2022",
+      "encounterId": "e-2022",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-11-04T03:18:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nBrings a list of medicines from an outside practice. Requests help confirming the record.\n\nObjective\nMedication names and doses intentionally omitted from this synthetic example.\n\nAssessment\nMedication reconciliation remains pending verification against outside records.\n\nPlan\nOutside pharmacy/practice confirmation requested. No prescription or dose change recorded."
+    },
+    {
+      "id": "n-2023",
+      "encounterId": "e-2023",
+      "authorId": "demo-clinician",
+      "createdAt": "2026-08-29T02:58:00Z",
+      "text": "SYNTHETIC TRAINING RECORD \u2014 fictional visit, not medical advice.\n\nSubjective\nReports variable sleep schedule during a recent change in work hours. No acute safety concern volunteered.\n\nObjective\nConversant and attentive. Vitals not recorded for this discussion visit.\n\nAssessment\nSleep concern with a recent schedule change; further history needed.\n\nPlan\nSleep routine and tracking discussed. Follow-up requested to review the sleep diary."
+    }
+  ]
+}

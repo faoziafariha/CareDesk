@@ -1,0 +1,54 @@
+name: Deploy Firebase
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        type: choice
+        options: [demo-preview, production]
+        default: demo-preview
+permissions:
+  contents: read
+concurrency:
+  group: firebase-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: firebase
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - run: npm ci
+      - run: npm run typecheck && npm test && npm run test:rules
+      - name: Build
+        run: npm run build
+        env:
+          VITE_MODE: ${{ inputs.target == 'production' && 'firebase' || 'demo' }}
+          VITE_USE_EMULATORS: 'false'
+          VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ vars.VITE_FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_APP_ID: ${{ vars.VITE_FIREBASE_APP_ID }}
+          VITE_RECAPTCHA_SITE_KEY: ${{ vars.VITE_RECAPTCHA_SITE_KEY }}
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - name: Demo Hosting preview
+        if: inputs.target == 'demo-preview'
+        run: npx firebase hosting:channel:deploy review --expires 7d --project "$PROJECT_ID" --non-interactive
+        env:
+          PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+      - name: Production
+        if: inputs.target == 'production'
+        run: npx firebase deploy --project "$PROJECT_ID" --non-interactive
+        env:
+          PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}

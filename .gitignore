@@ -1,0 +1,13 @@
+node_modules/
+dist/
+functions/lib/
+.env*
+!.env.example
+!functions/.env.example
+functions/.secret.local
+*-debug.log
+.firebase/
+*.local
+work/
+
+.vercel/

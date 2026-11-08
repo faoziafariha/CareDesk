@@ -1,0 +1,9 @@
+node_modules
+dist
+work
+.git
+.firebase
+*.log
+.env.local
+.env.production.local
+functions/.secret.local
