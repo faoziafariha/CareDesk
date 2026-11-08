@@ -1,11 +1,5 @@
 # CareDesk
 
-**Deploy on Vercel:** follow [the deployment guide](docs/VERCEL.md). Included configuration: Vite, Node 22, build `npm run build:vercel`, output `dist`. No API keys are needed for the synthetic demo.
-
-**Expanded care workspace:** profiles, care-task tracking, visit requests and scheduling, a searchable timeline with CSV export, and pharmacy directory filters. Fixtures include 12 patients, 8 pharmacies, 51 reports, 26 prescriptions, 26 interventions, 24 tasks and 24 appointments.
-
-**New: pharmacy-led care network prototype.** In demo mode, explore patient reports, doctor prescriptions, pharmacist interventions, consent controls, and pharmacy registration with persistent drafts and super-admin review. These new screens use browser storage; SMS codes are explicitly simulated. See [care network scope and walkthrough](docs/CARE_NETWORK.md). The original authenticated Firebase clinic workflow remains separate.
-
 A synthetic clinic workspace built with React, Vite, TypeScript, Node.js and Firebase. Designed as a small, reviewable full-stack portfolio project: patient records, encounter notes, clinician-reviewed AI drafts, access control and audit trails.
 
 **Portfolio software. Synthetic data only. Not for clinical use. No claim of HIPAA compliance.**
