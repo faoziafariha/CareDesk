@@ -79,18 +79,6 @@ npm run test:rules
 
 Rules tests prove **all** direct SDK paths are denied, including frontdesk note reads, patient own-record reads, forged audit writes and file access. Own-record access is deliberately a callable responsibility, rather than a Firestore rules exception. Unit tests cover that policy, encryption tampering, cross-record ciphertext swapping, validation and router failure behavior. See `docs/TESTING.md` for verification scope and staging checks.
 
-## Deploy
-
-See [deployment guide](docs/DEPLOYMENT.md). You can deploy the browser demo to static hosting immediately after `npm run build`, or configure a Firebase project for authenticated mode. The full backend requires project credentials, Secret Manager values and billing configuration; none are included in the repository.
-
-## Engineering decisions
-
-- [Architecture and data model](docs/ARCHITECTURE.md)
-- [Threat model and limitations](docs/THREAT_MODEL.md)
-- [Callable-only data access ADR](docs/adr/0001-audited-boundary.md)
-- [Technical debt and priorities](docs/TECHDEBT.md)
-- [Tests and review script](docs/TESTING.md)
-- [Application and interview notes](docs/PORTFOLIO.md)
 
 ## AI-assisted development
 
